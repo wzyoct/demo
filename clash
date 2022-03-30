@@ -1,38 +1,42 @@
-#后端&前缀
-https://api.wcc.best/sub?target=clash&new_name=true&url=
-#机场链接
-godetia
-https://sub.godetia.xyz/api/v1/client/subscribe?token=fa9c61b27a4304bac99e773c92ff08cc
-https%3A%2F%2Fsub.godetia.xyz%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3Dfa9c61b27a4304bac99e773c92ff08cc
-全球通
-https://www.goingv2.xyz/link/VtPlSLKbpnZG0oPv?sub=3
-https%3A%2F%2Fwww.goingv2.xyz%2Flink%2FVtPlSLKbpnZG0oPv%3Fsub%3D3
-樱云
-https://yingyun-rss.com/link/nS6dSdOL2lbehEbN?sub=3&class=1
-https://yingyun-rss.com/link/nS6dSdOL2lbehEbN?sub=3&class=2
-https%3A%2F%2Fyingyun-rss.com%2Flink%2FnS6dSdOL2lbehEbN%3Fsub%3D3%26class%3D1%7Chttps%3A%2F%2Fyingyun-rss.com%2Flink%2FnS6dSdOL2lbehEbN%3Fsub%3D3%26class%3D2
-魔戒
-https://mojie.link/api/v1/client/subscribe?token=b3565f7cd7d14d3aaf8afe06fa7f4f00
-喵叽
-https://miaoji.cf/api/v1/client/subscribe?token=0b3b0f44976344a1b4fd0f086a066a1e
-https%3A%2F%2Fmiaoji.cf%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D0b3b0f44976344a1b4fd0f086a066a1e
-pikap
-https://pikap.me/api/v1/client/subscribe?token=8d77aa405758c63fa525f33557ac6211
-https%3A%2F%2Fpikap.me%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D8d77aa405758c63fa525f33557ac6211
-#分界
-%7C
-#连接配置
-&insert=false&config=
-#配置
-https://raw.githubusercontent.com/wzyoct/ACL4SSR/patch-1/Clash/config/ACL4SSR_Online.ini
-https%3A%2F%2Fraw.githubusercontent.com%2Fwzyoct%2FACL4SSR%2Fpatch-1%2FClash%2Fconfig%2FACL4SSR_Online.ini
+[custom]
 
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+ruleset=🛑 广告拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+ruleset=🍃 应用净化,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+ruleset=📢 谷歌FCM,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
+ruleset=🚀 微软服务,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+ruleset=🎥 Disney,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Disney/Disney.list
+ruleset=📹 YouTube,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
+ruleset=🎥 Netflix,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
+ruleset=🌏 国内媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
+ruleset=🌍 国外媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+ruleset=🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+;ruleset=🎯 全球直连,[]GEOIP,LAN
+ruleset=🎯 全球直连,[]GEOIP,CN
+ruleset=🐟 漏网之鱼,[]FINAL
 
-#排除
-Game|流量|域名|过期时间|Free
-转换
-://===%3A%2F%2F
-|===%7C
-?===%3F
-====%3D
-&===%26
+custom_proxy_group=🚀 节点选择`select`[]♻️ 自动选择`[]🚀 手动切换`[]DIRECT
+custom_proxy_group=♻️ 自动选择`url-test`^((?!(港|HK|Hong Kong|2.5)).)*$`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🚀 手动切换`select`.*
+custom_proxy_group=🎥 Netflix节点`select`(台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore)
+custom_proxy_group=🎥 Disney节点`select`(港|HK|Hong Kong|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan)
+custom_proxy_group=📹 YouTube`select`[]🚀 节点选择`[]♻️ 自动选择`[]🚀 手动切换`[]DIRECT
+custom_proxy_group=🚀 微软服务`select`[]🚀 节点选择`[]♻️ 自动选择`[]🚀 手动切换`[]DIRECT
+custom_proxy_group=🌍 国外媒体`select`[]🚀 节点选择`[]♻️ 自动选择`[]🚀 手动切换`[]DIRECT
+custom_proxy_group=🌏 国内媒体`select`[]DIRECT`[]🚀 手动切换
+custom_proxy_group=🎥 Disney`select`[]🎥 Disney节点
+custom_proxy_group=🎥 Netflix`select`[]🎥 Netflix节点
+custom_proxy_group=📢 谷歌FCM`select`[]DIRECT`[]🚀 节点选择`[]♻️ 自动选择
+custom_proxy_group=🎯 全球直连`select`[]DIRECT`[]🚀 节点选择`[]♻️ 自动选择
+custom_proxy_group=🛑 广告拦截`select`[]REJECT`[]DIRECT
+custom_proxy_group=🍃 应用净化`select`[]REJECT`[]DIRECT
+custom_proxy_group=🐟 漏网之鱼`select`[]🚀 节点选择`[]♻️ 自动选择`[]DIRECT`[]🚀 手动切换
+
+enable_rule_generator=true
+overwrite_original_rules=true
