@@ -1,1 +1,4 @@
-DOMAIN-KEYWORD,dashline
+DOMAIN-SUFFIX,dashline
+;playstore
+DOMAIN-SUFFIX,services.googleapis.cn
+DOMAIN-SUFFIX,services.googleapis.com
