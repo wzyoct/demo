@@ -2,3 +2,4 @@ PROCESS-NAME,qq.exe
 DOMAIN-SUFFIX,w.t3yanzheng.com
 DOMAIN-SUFFIX,greencloudvps.com
 IP-CIDR,192.168.31.0/24
+IP-CIDR,127.0.0.0/16
